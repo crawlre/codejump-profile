@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サイトのタイトル</title>
+    <meta name="description" content="サイトの説明文" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="/icon-192x192.png" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="サイトのタイトル" />
+    <meta property="og:url" content="サイトのURL" />
+    <!-- NOTE: トップページの場合はwebsite、下層ページの場合はarticleを指定 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="サイトのタイトル" />
+    <meta property="og:description" content="サイトの説明文" />
+    <meta property="og:image" content="OGP画像のURL(絶対パス)" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="サイトの説明文" />
+    <meta name="twitter:image:src" content="画像のURL(絶対パス)" />
+
+    <!-- google fonts -->
+    <!-- NOTE: 使用するフォントに応じて書き換えること -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./scss/style.scss" />
+
+    <!-- preload -->
+    <!-- NOTE: メインビジュアルなど、メインとなる画像を指定すること -->
+    <link rel="preload" as="image" href="./assets/images/common/logo.svg" />
+
+    <!-- js -->
+    <script type="module" src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <%- include('./ejs/_header') %>
+
+    <main></main>
+
+    <%- include('./ejs/_footer') %>
+  </body>
+</html>
