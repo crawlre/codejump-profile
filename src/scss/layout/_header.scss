@@ -1,1 +1,25 @@
 @use '../global' as *;
+
+.l-header {
+  padding-block: 15px;
+}
+
+.l-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-header__logo {
+  aspect-ratio: 120 / 40;
+}
+
+.l-header__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.l-header__item {
+  font-size: 14.4px;
+}

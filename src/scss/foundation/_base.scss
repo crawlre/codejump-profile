@@ -3,5 +3,9 @@
 body {
   font-family: $font-family-base;
   background-color: $color-bg-base;
-  color: $color-font-base;
+  color: $color-text-base;
+}
+
+img {
+  display: block;
 }
