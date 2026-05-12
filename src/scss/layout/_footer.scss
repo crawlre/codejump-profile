@@ -1,1 +1,16 @@
 @use '../global' as *;
+
+.l-footer {
+  margin-top: 110px;
+}
+
+.l-footer__container {
+  padding-block: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.l-footer__copyright {
+  font-size: 8px;
+  font-weight: $font-weight-thin;
+}
