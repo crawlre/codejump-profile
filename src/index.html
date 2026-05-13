@@ -44,7 +44,15 @@
   <body>
     <%- include('./ejs/_header') %>
 
-    <main></main>
+    <main>
+      <section class="l-top-hero">
+        <picture class="l-top-hero__img">
+          <source media="(max-width:600px)" srcset="/images/bg-hero-sp.jpg 750w" sizes="100vw" />
+          <img src="/images/bg-hero-pc.jpg" />
+        </picture>
+      </section>
+      <!-- /.l-top-hero -->
+    </main>
 
     <%- include('./ejs/_footer') %>
   </body>
