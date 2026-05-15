@@ -1,0 +1,8 @@
+@use '../global' as *;
+
+.c-section-title {
+  width: fit-content;
+  font-size: 32px;
+  font-weight: $font-weight-semi-bold;
+  border-bottom: 1px solid currentColor;
+}
